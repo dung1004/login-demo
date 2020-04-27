@@ -1,0 +1,19 @@
+.App {
+    padding: 5%;
+
+}
+form {
+    box-shadow: 0 0 0 1px #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 40px;
+    border-radius: 4px;
+}
+form .MuiFormControl-root {
+    margin-bottom: 20px;
+}
+form .button {
+    display: inline;
+    width: fit-content;
+}
