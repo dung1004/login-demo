@@ -1,9 +1,9 @@
-import * as types from './../constants/index';
+import * as types from "./../constants/index";
 
 const initialState = {
-  currentUser: {},
+  currentUser: [],
   loading: false,
-  error: {}
+  error: {},
 };
 
 export default function loginReducer(state = initialState, action) {
@@ -16,14 +16,12 @@ export default function loginReducer(state = initialState, action) {
     case types.LOGIN_SUCCESS:
       return {
         ...state,
-        // currentUser: action.userObj,
-        loading: false,
+        currentUser: action.userObj,
       };
     case types.LOGIN_FAILED:
       return {
         ...state,
-        loading: false,
-        error: action.error
+        error: action.err,
       };
     default:
       return state;
